@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>My Account - SecureNum</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        </svg>
+        <span>SecureNum</span>
+      </div>
+      <nav>
+        <span id="username-display">Welcome!</span>
+        <button id="logout-button" class="button">Logout</button>
+      </nav>
+    </header>
+    
+    <main class="dashboard">
+      <h1>Your Numbers Dashboard</h1>
+      
+      <div class="add-number-form">
+        <input type="number" id="new-number" placeholder="Enter a number">
+        <button id="add-number-btn" class="button primary">Add Number</button>
+      </div>
+      
+      <div class="numbers-list">
+        <h2>Your Numbers</h2>
+        <div id="numbers-container"></div>
+      </div>
+      
+      <div class="chat-section">
+        <h2>Ask for Help</h2>
+        <div class="chat-container">
+          <div id="chat-messages"></div>
+          <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Type your question...">
+            <button id="send-message-btn" class="button">Send</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
